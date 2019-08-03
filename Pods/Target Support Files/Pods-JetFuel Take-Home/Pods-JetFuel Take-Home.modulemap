@@ -1,0 +1,6 @@
+framework module Pods_JetFuel_Take_Home {
+  umbrella header "Pods-JetFuel Take-Home-umbrella.h"
+
+  export *
+  module * { export * }
+}

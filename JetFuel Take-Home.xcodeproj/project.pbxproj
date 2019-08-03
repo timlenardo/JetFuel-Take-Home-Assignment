@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FE535430376442766F031BC /* Pods_JetFuel_Take_Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF099BD90277E5F92EFBA888 /* Pods_JetFuel_Take_Home.framework */; };
+		AC0C296822F61D47003806C0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0C296722F61D47003806C0 /* TableViewCell.swift */; };
+		AC0C296A22F61EA7003806C0 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0C296922F61EA7003806C0 /* Helpers.swift */; };
+		ACC8B22722F50D250002BF17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC8B22622F50D250002BF17 /* AppDelegate.swift */; };
+		ACC8B22922F50D250002BF17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC8B22822F50D250002BF17 /* ViewController.swift */; };
+		ACC8B22C22F50D250002BF17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC8B22A22F50D250002BF17 /* Main.storyboard */; };
+		ACC8B22E22F50D270002BF17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC8B22D22F50D270002BF17 /* Assets.xcassets */; };
+		ACC8B23122F50D270002BF17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC8B22F22F50D270002BF17 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB4614CC10057D75A0C55875 /* Pods-JetFuel Take-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetFuel Take-Home.debug.xcconfig"; path = "Target Support Files/Pods-JetFuel Take-Home/Pods-JetFuel Take-Home.debug.xcconfig"; sourceTree = "<group>"; };
+		AC0C296722F61D47003806C0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = "../../../../Prad/Documents/JetFuel Take-Home/JetFuel Take-Home/TableViewCell.swift"; sourceTree = "<group>"; };
+		AC0C296922F61EA7003806C0 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = "../../../../Prad/Documents/JetFuel Take-Home/JetFuel Take-Home/Helpers.swift"; sourceTree = "<group>"; };
+		ACC8B22322F50D250002BF17 /* JetFuel Take-Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JetFuel Take-Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC8B22622F50D250002BF17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACC8B22822F50D250002BF17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACC8B22B22F50D250002BF17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACC8B22D22F50D270002BF17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACC8B23022F50D270002BF17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACC8B23222F50D270002BF17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E99F9386C639F45005A41C /* Pods-JetFuel Take-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetFuel Take-Home.release.xcconfig"; path = "Target Support Files/Pods-JetFuel Take-Home/Pods-JetFuel Take-Home.release.xcconfig"; sourceTree = "<group>"; };
+		FF099BD90277E5F92EFBA888 /* Pods_JetFuel_Take_Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetFuel_Take_Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACC8B22022F50D250002BF17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE535430376442766F031BC /* Pods_JetFuel_Take_Home.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7797A00F0828E31C68C917CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF099BD90277E5F92EFBA888 /* Pods_JetFuel_Take_Home.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACC8B21A22F50D250002BF17 = {
+			isa = PBXGroup;
+			children = (
+				ACC8B22522F50D250002BF17 /* JetFuel Take-Home */,
+				ACC8B22422F50D250002BF17 /* Products */,
+				D5E3797232B30E0E2BB62EDF /* Pods */,
+				7797A00F0828E31C68C917CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ACC8B22422F50D250002BF17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACC8B22322F50D250002BF17 /* JetFuel Take-Home.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACC8B22522F50D250002BF17 /* JetFuel Take-Home */ = {
+			isa = PBXGroup;
+			children = (
+				ACC8B22622F50D250002BF17 /* AppDelegate.swift */,
+				ACC8B22822F50D250002BF17 /* ViewController.swift */,
+				AC0C296922F61EA7003806C0 /* Helpers.swift */,
+				AC0C296722F61D47003806C0 /* TableViewCell.swift */,
+				ACC8B22A22F50D250002BF17 /* Main.storyboard */,
+				ACC8B22D22F50D270002BF17 /* Assets.xcassets */,
+				ACC8B22F22F50D270002BF17 /* LaunchScreen.storyboard */,
+				ACC8B23222F50D270002BF17 /* Info.plist */,
+			);
+			path = "JetFuel Take-Home";
+			sourceTree = "<group>";
+		};
+		D5E3797232B30E0E2BB62EDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB4614CC10057D75A0C55875 /* Pods-JetFuel Take-Home.debug.xcconfig */,
+				E8E99F9386C639F45005A41C /* Pods-JetFuel Take-Home.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACC8B22222F50D250002BF17 /* JetFuel Take-Home */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACC8B23522F50D270002BF17 /* Build configuration list for PBXNativeTarget "JetFuel Take-Home" */;
+			buildPhases = (
+				E9475A5FDB9FA18257544FAF /* [CP] Check Pods Manifest.lock */,
+				ACC8B21F22F50D250002BF17 /* Sources */,
+				ACC8B22022F50D250002BF17 /* Frameworks */,
+				ACC8B22122F50D250002BF17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JetFuel Take-Home";
+			productName = "JetFuel Take-Home";
+			productReference = ACC8B22322F50D250002BF17 /* JetFuel Take-Home.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACC8B21B22F50D250002BF17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Pradyumn Nukala";
+				TargetAttributes = {
+					ACC8B22222F50D250002BF17 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = ACC8B21E22F50D250002BF17 /* Build configuration list for PBXProject "JetFuel Take-Home" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACC8B21A22F50D250002BF17;
+			productRefGroup = ACC8B22422F50D250002BF17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACC8B22222F50D250002BF17 /* JetFuel Take-Home */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACC8B22122F50D250002BF17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC8B23122F50D270002BF17 /* LaunchScreen.storyboard in Resources */,
+				ACC8B22E22F50D270002BF17 /* Assets.xcassets in Resources */,
+				ACC8B22C22F50D250002BF17 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E9475A5FDB9FA18257544FAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JetFuel Take-Home-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACC8B21F22F50D250002BF17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0C296822F61D47003806C0 /* TableViewCell.swift in Sources */,
+				ACC8B22922F50D250002BF17 /* ViewController.swift in Sources */,
+				ACC8B22722F50D250002BF17 /* AppDelegate.swift in Sources */,
+				AC0C296A22F61EA7003806C0 /* Helpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ACC8B22A22F50D250002BF17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACC8B22B22F50D250002BF17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACC8B22F22F50D270002BF17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACC8B23022F50D270002BF17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACC8B23322F50D270002BF17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACC8B23422F50D270002BF17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACC8B23622F50D270002BF17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB4614CC10057D75A0C55875 /* Pods-JetFuel Take-Home.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2RDUCR73MT;
+				INFOPLIST_FILE = "JetFuel Take-Home/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pradn.plugs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACC8B23722F50D270002BF17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E99F9386C639F45005A41C /* Pods-JetFuel Take-Home.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2RDUCR73MT;
+				INFOPLIST_FILE = "JetFuel Take-Home/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pradn.plugs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACC8B21E22F50D250002BF17 /* Build configuration list for PBXProject "JetFuel Take-Home" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC8B23322F50D270002BF17 /* Debug */,
+				ACC8B23422F50D270002BF17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACC8B23522F50D270002BF17 /* Build configuration list for PBXNativeTarget "JetFuel Take-Home" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC8B23622F50D270002BF17 /* Debug */,
+				ACC8B23722F50D270002BF17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACC8B21B22F50D250002BF17 /* Project object */;
+}
