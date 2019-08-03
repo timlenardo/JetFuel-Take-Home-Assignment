@@ -7,22 +7,53 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UITableViewController {
-    
     let model = generateRandomData()
     var storedOffsets = [Int: CGFloat]()
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.count
+        // REST URL and Init Var
+        let url = "http://www.plugco.in/public/take_home_sample_feed"
+        var count = 5
+        
+        // Call Request
+        Alamofire.request(url).responseWelcome { response in
+            if let data = response.result.value {
+                // Return Campaign Count
+                count = data.campaigns.count
+            }
+        }
+        
+        // Return Count
+        return count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Disable Separator for Table Cell
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none;
         
-
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        // Initialize Cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
+        
+        // REST URL
+        let url = "http://www.plugco.in/public/take_home_sample_feed"
+        
+        // Call Request
+        Alamofire.request(url).responseWelcome { response in
+            if let data = response.result.value {
+                cell.campaign_name.text = data.campaigns[indexPath.row].campaignName
+                cell.pay_per_install.text = data.campaigns[indexPath.row].payPerInstall
+                cell.campaign_icon_url.downloaded(from: data.campaigns[indexPath.row].campaignIconURL)
+            }
+        }
+        
         return cell
     }
     
@@ -48,7 +79,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CardViewCell
         
         return cell
     }

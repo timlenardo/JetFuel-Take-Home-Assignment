@@ -16,6 +16,7 @@
 		ACC8B22E22F50D270002BF17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC8B22D22F50D270002BF17 /* Assets.xcassets */; };
 		ACC8B23122F50D270002BF17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC8B22F22F50D270002BF17 /* LaunchScreen.storyboard */; };
 		ACEF1FF722F627670018A9E6 /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEF1FF622F627670018A9E6 /* CardViewCell.swift */; };
+		ACEF1FFB22F635020018A9E6 /* RestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEF1FFA22F635020018A9E6 /* RestResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		ACC8B23022F50D270002BF17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACC8B23222F50D270002BF17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACEF1FF622F627670018A9E6 /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardViewCell.swift; path = "../../../../Prad/Documents/JetFuel Take-Home/JetFuel Take-Home/CardViewCell.swift"; sourceTree = "<group>"; };
+		ACEF1FFA22F635020018A9E6 /* RestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestResponse.swift; path = "../../../../Prad/Documents/JetFuel Take-Home/JetFuel Take-Home/RestResponse.swift"; sourceTree = "<group>"; };
 		E8E99F9386C639F45005A41C /* Pods-JetFuel Take-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetFuel Take-Home.release.xcconfig"; path = "Target Support Files/Pods-JetFuel Take-Home/Pods-JetFuel Take-Home.release.xcconfig"; sourceTree = "<group>"; };
 		FF099BD90277E5F92EFBA888 /* Pods_JetFuel_Take_Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetFuel_Take_Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 				ACC8B22622F50D250002BF17 /* AppDelegate.swift */,
 				ACEF1FF622F627670018A9E6 /* CardViewCell.swift */,
 				AC0C296922F61EA7003806C0 /* Helpers.swift */,
+				ACEF1FFA22F635020018A9E6 /* RestResponse.swift */,
 				AC0C296722F61D47003806C0 /* TableViewCell.swift */,
 				ACC8B22822F50D250002BF17 /* ViewController.swift */,
 				ACC8B23222F50D270002BF17 /* Info.plist */,
@@ -108,6 +111,7 @@
 				ACC8B21F22F50D250002BF17 /* Sources */,
 				ACC8B22022F50D250002BF17 /* Frameworks */,
 				ACC8B22122F50D250002BF17 /* Resources */,
+				3FB3CDE2AD6332E5428E7BF1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,6 +169,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3FB3CDE2AD6332E5428E7BF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JetFuel Take-Home/Pods-JetFuel Take-Home-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JetFuel Take-Home/Pods-JetFuel Take-Home-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E9475A5FDB9FA18257544FAF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEF1FFB22F635020018A9E6 /* RestResponse.swift in Sources */,
 				AC0C296822F61D47003806C0 /* TableViewCell.swift in Sources */,
 				ACC8B22922F50D250002BF17 /* ViewController.swift in Sources */,
 				ACEF1FF722F627670018A9E6 /* CardViewCell.swift in Sources */,
