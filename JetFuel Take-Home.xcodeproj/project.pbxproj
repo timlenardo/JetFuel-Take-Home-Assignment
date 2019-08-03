@@ -15,6 +15,7 @@
 		ACC8B22C22F50D250002BF17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC8B22A22F50D250002BF17 /* Main.storyboard */; };
 		ACC8B22E22F50D270002BF17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC8B22D22F50D270002BF17 /* Assets.xcassets */; };
 		ACC8B23122F50D270002BF17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC8B22F22F50D270002BF17 /* LaunchScreen.storyboard */; };
+		ACEF1FF722F627670018A9E6 /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEF1FF622F627670018A9E6 /* CardViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		ACC8B22D22F50D270002BF17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACC8B23022F50D270002BF17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACC8B23222F50D270002BF17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACEF1FF622F627670018A9E6 /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardViewCell.swift; path = "../../../../Prad/Documents/JetFuel Take-Home/JetFuel Take-Home/CardViewCell.swift"; sourceTree = "<group>"; };
 		E8E99F9386C639F45005A41C /* Pods-JetFuel Take-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetFuel Take-Home.release.xcconfig"; path = "Target Support Files/Pods-JetFuel Take-Home/Pods-JetFuel Take-Home.release.xcconfig"; sourceTree = "<group>"; };
 		FF099BD90277E5F92EFBA888 /* Pods_JetFuel_Take_Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetFuel_Take_Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,14 +75,15 @@
 		ACC8B22522F50D250002BF17 /* JetFuel Take-Home */ = {
 			isa = PBXGroup;
 			children = (
+				ACC8B22D22F50D270002BF17 /* Assets.xcassets */,
 				ACC8B22622F50D250002BF17 /* AppDelegate.swift */,
-				ACC8B22822F50D250002BF17 /* ViewController.swift */,
+				ACEF1FF622F627670018A9E6 /* CardViewCell.swift */,
 				AC0C296922F61EA7003806C0 /* Helpers.swift */,
 				AC0C296722F61D47003806C0 /* TableViewCell.swift */,
-				ACC8B22A22F50D250002BF17 /* Main.storyboard */,
-				ACC8B22D22F50D270002BF17 /* Assets.xcassets */,
-				ACC8B22F22F50D270002BF17 /* LaunchScreen.storyboard */,
+				ACC8B22822F50D250002BF17 /* ViewController.swift */,
 				ACC8B23222F50D270002BF17 /* Info.plist */,
+				ACC8B22F22F50D270002BF17 /* LaunchScreen.storyboard */,
+				ACC8B22A22F50D250002BF17 /* Main.storyboard */,
 			);
 			path = "JetFuel Take-Home";
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			files = (
 				AC0C296822F61D47003806C0 /* TableViewCell.swift in Sources */,
 				ACC8B22922F50D250002BF17 /* ViewController.swift in Sources */,
+				ACEF1FF722F627670018A9E6 /* CardViewCell.swift in Sources */,
 				ACC8B22722F50D250002BF17 /* AppDelegate.swift in Sources */,
 				AC0C296A22F61EA7003806C0 /* Helpers.swift in Sources */,
 			);

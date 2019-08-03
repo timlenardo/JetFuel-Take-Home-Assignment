@@ -12,15 +12,17 @@ class ViewController: UITableViewController {
     
     let model = generateRandomData()
     var storedOffsets = [Int: CGFloat]()
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Disable Separator for Table Cell
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none;
         
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
         return cell
     }
     
@@ -47,8 +49,6 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-        
-        cell.backgroundColor = model[collectionView.tag][indexPath.item]
         
         return cell
     }

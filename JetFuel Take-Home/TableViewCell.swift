@@ -3,7 +3,9 @@ import UIKit
 class TableViewCell: UITableViewCell {
     
     @IBOutlet fileprivate weak var collectionView: UICollectionView!
-    
+    @IBOutlet weak var campaign_name: UILabel!
+    @IBOutlet weak var pay_per_install: UILabel!
+    @IBOutlet weak var campaign_icon_url: UIImageView!
 }
 
 extension TableViewCell {
@@ -18,8 +20,6 @@ extension TableViewCell {
         collectionView.tag = row
         collectionView.setContentOffset(collectionView.contentOffset, animated:false)
         collectionView.reloadData()
-        
-
     }
     
     var collectionViewOffset: CGFloat {
