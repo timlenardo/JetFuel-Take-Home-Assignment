@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--PLUGS-->
         <scene sceneID="xAO-nM-z96">
             <objects>
-                <tableViewController id="rDR-zS-CWe" customClass="ViewController" customModule="JetFuel_Take_Home" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="PLUGS" id="rDR-zS-CWe" customClass="ViewController" customModule="JetFuel_Take_Home" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="383" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ny1-Il-xbh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

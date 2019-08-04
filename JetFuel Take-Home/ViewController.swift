@@ -8,51 +8,55 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class ViewController: UITableViewController {
-    let model = generateRandomData()
     var storedOffsets = [Int: CGFloat]()
+    var arrRes = [[String:AnyObject]]() //Array of dictionary
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let url = "http://www.plugco.in/public/take_home_sample_feed"
+        Alamofire.request(url).responseJSON { (responseData) -> Void in
+            if((responseData.result.value) != nil) {
+                let swiftyJsonVar = JSON(responseData.result.value!)
+                
+                if let resData = swiftyJsonVar["campaigns"].arrayObject {
+                    self.arrRes = resData as! [[String:AnyObject]]
+                }
+                if self.arrRes.count > 0 {
+                    self.tableView.reloadData()
+                }
+            }
+        }
+
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // REST URL and Init Var
-        let url = "http://www.plugco.in/public/take_home_sample_feed"
-        var count = 5
-        
-        // Call Request
-        Alamofire.request(url).responseWelcome { response in
-            if let data = response.result.value {
-                // Return Campaign Count
-                count = data.campaigns.count
-            }
-        }
-        
-        // Return Count
-        return count
+        return arrRes.count
     }
     
+    // ************************
+    // -- Table Cell Setup --
+    // ************************
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Disable Separator for Table Cell
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none;
         
+        // Disable TableCell Selection
+        tableView.allowsSelection = false
+        
+        // Data for Row
+        var data = arrRes[(indexPath as NSIndexPath).row]
+        
         // Initialize Cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
-        
-        // REST URL
-        let url = "http://www.plugco.in/public/take_home_sample_feed"
-        
-        // Call Request
-        Alamofire.request(url).responseWelcome { response in
-            if let data = response.result.value {
-                cell.campaign_name.text = data.campaigns[indexPath.row].campaignName
-                cell.pay_per_install.text = data.campaigns[indexPath.row].payPerInstall
-                cell.campaign_icon_url.downloaded(from: data.campaigns[indexPath.row].campaignIconURL)
-            }
-        }
+
+        cell.campaign_name.text = (data["campaign_name"] as! String)
+        cell.pay_per_install.text = (data["pay_per_install"] as! String)
+        cell.campaign_icon_url.downloaded(from: data["campaign_icon_url"] as! String)
+
         
         return cell
     }
@@ -73,15 +77,31 @@ class ViewController: UITableViewController {
     }
 }
 
+// *********************************
+// -- Collection Card Cell Setup --
+// *********************************
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return model[collectionView.tag].count
+        var rowData = arrRes[collectionView.tag]
+        var medias = [[String:AnyObject]]()
+        medias = rowData["medias"] as! [[String : AnyObject]]
+        return medias.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+        // Initialize
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CardViewCell
         
+        // Get Data from Row
+        var rowData = arrRes[collectionView.tag]
+        var medias = [[String:AnyObject]]()
+        medias = rowData["medias"] as! [[String : AnyObject]]
+        var data = medias[(indexPath as NSIndexPath).row]
+        
+        // Set Values
+        cell.cover_photo_url.downloaded(from: data["cover_photo_url"] as! String)
+        cell.trackingLink = data["tracking_link"] as! String
+        cell.downloadURL = data["download_url"] as! String
         return cell
     }
     
