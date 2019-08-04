@@ -26,9 +26,4 @@ extension TableViewCell {
         campaign_icon_url.layer.cornerRadius = 18
         campaign_icon_url.clipsToBounds = true
     }
-    
-    var collectionViewOffset: CGFloat {
-        set { collectionView.contentOffset.x = newValue }
-        get { return collectionView.contentOffset.x }
-    }
 }

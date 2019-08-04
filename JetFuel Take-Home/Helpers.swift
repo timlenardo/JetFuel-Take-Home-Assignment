@@ -31,6 +31,7 @@ extension UIImageView {
     }
 }
 
+
 // Extension to Add Filter
 enum FilterType : String {
     case Chrome = "CIPhotoEffectChrome"
