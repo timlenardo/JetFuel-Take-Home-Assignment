@@ -76,6 +76,10 @@ class ViewController: UITableViewController {
         
         storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
     }
+    
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return  351;
+    }
 }
 
 // *********************************
@@ -103,6 +107,17 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.cover_photo_url.downloaded(from: data["cover_photo_url"] as! String)
         cell.trackingLink = data["tracking_link"] as! String
         cell.downloadURL = data["download_url"] as! String
+        
+        // Set Video Value
+        var status: Bool = true
+        if(data["media_type"] as! String == "video"){
+            status = true
+        }else{
+            status = false
+        }
+        cell.setAsVideo(status: status)
+        
+        // Return Card
         return cell
     }
     

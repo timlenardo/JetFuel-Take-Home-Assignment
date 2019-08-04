@@ -66,6 +66,14 @@
                                                                     <action selector="download_url_touch:" destination="69x-NK-CHF" eventType="touchUpInside" id="bRY-GB-WRS"/>
                                                                 </connections>
                                                             </button>
+                                                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ja-oe-mc4">
+                                                                <rect key="frame" x="41" y="90" width="23" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" image="play"/>
+                                                                <connections>
+                                                                    <action selector="play_button_down:" destination="69x-NK-CHF" eventType="touchUpInside" id="Ph6-4e-LfK"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                     </view>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,6 +81,7 @@
                                                     <connections>
                                                         <outlet property="cover_photo_url" destination="gMM-qm-Mku" id="98q-4c-wI0"/>
                                                         <outlet property="download_url" destination="I7d-EK-hKG" id="okb-9L-q7i"/>
+                                                        <outlet property="play_button" destination="4Ja-oe-mc4" id="7XH-lW-aij"/>
                                                         <outlet property="tracking_link" destination="8Mu-4J-TDF" id="Cwx-DK-vsX"/>
                                                     </connections>
                                                 </collectionViewCell>
@@ -87,14 +96,14 @@
                                             <color key="backgroundColor" red="0.97752541299999995" green="0.98743730780000005" blue="0.99043732880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OM0-ym-bFu">
-                                            <rect key="frame" x="105" y="21" width="180" height="36"/>
+                                            <rect key="frame" x="105" y="21" width="289" height="36"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9J-wN-mkf">
-                                            <rect key="frame" x="105" y="55" width="180" height="31"/>
+                                            <rect key="frame" x="105" y="55" width="289" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                             <color key="textColor" red="0.0" green="0.63238406181335449" blue="0.26937875151634216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -143,5 +152,6 @@
     </scenes>
     <resources>
         <image name="Group" width="101" height="46"/>
+        <image name="play" width="23" height="25"/>
     </resources>
 </document>
