@@ -49,6 +49,7 @@ class ViewController: UITableViewController {
         
         // Data for Row
         var data = arrRes[(indexPath as NSIndexPath).row]
+        print(data)
         
         // Initialize Cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
