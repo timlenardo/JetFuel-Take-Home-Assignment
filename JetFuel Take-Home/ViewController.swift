@@ -20,6 +20,8 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Set Title
+          self.title = "Plugs"
         
         // Data Request
         fetchData()
